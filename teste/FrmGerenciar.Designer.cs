@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPapavel = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.brAdd = new System.Windows.Forms.Button();
             this.btRemove = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPapavel)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvPapavel
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPapavel.AllowUserToAddRows = false;
+            this.dgvPapavel.AllowUserToDeleteRows = false;
+            this.dgvPapavel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPapavel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nome});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(373, 426);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvPapavel.Location = new System.Drawing.Point(12, 12);
+            this.dgvPapavel.Name = "dgvPapavel";
+            this.dgvPapavel.ReadOnly = true;
+            this.dgvPapavel.Size = new System.Drawing.Size(373, 426);
+            this.dgvPapavel.TabIndex = 0;
             // 
             // ID
             // 
@@ -109,11 +109,11 @@
             this.Controls.Add(this.brAdd);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPapavel);
             this.Name = "FrmGerenciar";
             this.Text = "FrmGerenciar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGerenciar_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPapavel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +121,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPapavel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;

@@ -36,7 +36,22 @@ namespace teste
             anterior.AtribuirPalpaveis(papaveis);
             anterior.Show();
         }
+        void Atualizar()
+        {
+            dgvPapavel.Rows.Clear();
+            for (int i = 0; i < Lenght(papaveis); i++)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                row.CreateCells(dgvPapavel);
+                for (int j = 0; j < papaveis[i].Length; j++)
+                {
+                    row.Cells[j].Value = papaveis[i][j];
 
+                }
+                dgvPapavel.Rows.Add(row);
+
+            }
+        }
         int Buscar(string nome)
         {
             int i = 0;
@@ -72,6 +87,10 @@ namespace teste
             {
                 id = int.Parse(papaveis[Lenght(papaveis) - 1][0]) + 1;
             }
+            papaveis[Lenght(papaveis)] = new string[] {id.ToString(), nome};
+            MessageBox.Show("Papavel adicionado com sucesso!");
+            txtNome.Text = "";
+            Atualizar();
         }
     }
 }
