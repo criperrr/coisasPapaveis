@@ -27,10 +27,7 @@ namespace teste
             {
                 DataGridViewRow row = new DataGridViewRow();
                 row.CreateCells(dgvPapavel);
-                for (int j = 0; j < papaveis[i].Length; j++)
-                {
-                    row.Cells[j].Value = papaveis[i][j];
-                }
+                row.Cells[0].Value = papaveis[i][0];
                 dgvPapavel.Rows.Add(row);
             }
         }
@@ -54,7 +51,7 @@ namespace teste
                 MessageBox.Show("Esse nome já está cadastrado!");
                 return;
             }
-            papaveis[Funcoes.Lenght(papaveis)] = new string[] { nome };
+            papaveis[Funcoes.Lenght(papaveis)] = new string[] { nome, "0" };
             MessageBox.Show("Papavel adicionado com sucesso!");
             txtNome.Text = "";
             Atualizar();
