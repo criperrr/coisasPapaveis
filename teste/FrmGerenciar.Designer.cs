@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvPapavel = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.brAdd = new System.Windows.Forms.Button();
             this.btRemove = new System.Windows.Forms.Button();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPapavel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,25 +43,12 @@
             this.dgvPapavel.AllowUserToDeleteRows = false;
             this.dgvPapavel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPapavel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
             this.Nome});
             this.dgvPapavel.Location = new System.Drawing.Point(12, 12);
             this.dgvPapavel.Name = "dgvPapavel";
             this.dgvPapavel.ReadOnly = true;
             this.dgvPapavel.Size = new System.Drawing.Size(373, 426);
             this.dgvPapavel.TabIndex = 0;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
             // 
             // label1
             // 
@@ -100,6 +86,12 @@
             this.btRemove.Text = "Excluir";
             this.btRemove.UseVisualStyleBackColor = true;
             // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            // 
             // FrmGerenciar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,9 +116,8 @@
         private System.Windows.Forms.DataGridView dgvPapavel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.Button brAdd;
         private System.Windows.Forms.Button btRemove;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
     }
 }

@@ -22,11 +22,22 @@ namespace teste
         private void btGerenciar_Click(object sender, EventArgs e)
         {
             FrmGerenciar f = new FrmGerenciar(this, papaveis);
-            f.Show();
+            f.ShowDialog();
         }
         public void AtribuirPalpaveis(string[][] papaveis)
         {
             this.papaveis = papaveis;
+        }
+
+        private void btResult_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btVotar_Click(object sender, EventArgs e)
+        {
+            FrmVotar f = new FrmVotar(this, papaveis);
+            f.ShowDialog();
         }
     }
 }

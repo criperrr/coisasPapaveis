@@ -53,6 +53,7 @@
             this.btVotar.TabIndex = 1;
             this.btVotar.Text = "&otar";
             this.btVotar.UseVisualStyleBackColor = true;
+            this.btVotar.Click += new System.EventHandler(this.btVotar_Click);
             // 
             // btResult
             // 
@@ -63,6 +64,7 @@
             this.btResult.TabIndex = 2;
             this.btResult.Text = "&tados";
             this.btResult.UseVisualStyleBackColor = true;
+            this.btResult.Click += new System.EventHandler(this.btResult_Click);
             // 
             // Form1
             // 
