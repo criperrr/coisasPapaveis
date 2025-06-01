@@ -36,44 +36,48 @@
             // btGerenciar
             // 
             this.btGerenciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGerenciar.Location = new System.Drawing.Point(12, 12);
+            this.btGerenciar.Location = new System.Drawing.Point(16, 15);
+            this.btGerenciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btGerenciar.Name = "btGerenciar";
-            this.btGerenciar.Size = new System.Drawing.Size(776, 92);
+            this.btGerenciar.Size = new System.Drawing.Size(1035, 113);
             this.btGerenciar.TabIndex = 0;
-            this.btGerenciar.Text = "&gerenciar papaveis";
+            this.btGerenciar.Text = "&Gerenciar Papaveis";
             this.btGerenciar.UseVisualStyleBackColor = true;
             this.btGerenciar.Click += new System.EventHandler(this.btGerenciar_Click);
             // 
             // btVotar
             // 
             this.btVotar.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVotar.Location = new System.Drawing.Point(12, 175);
+            this.btVotar.Location = new System.Drawing.Point(16, 215);
+            this.btVotar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btVotar.Name = "btVotar";
-            this.btVotar.Size = new System.Drawing.Size(776, 92);
+            this.btVotar.Size = new System.Drawing.Size(1035, 113);
             this.btVotar.TabIndex = 1;
-            this.btVotar.Text = "&otar";
+            this.btVotar.Text = "&Votar";
             this.btVotar.UseVisualStyleBackColor = true;
             this.btVotar.Click += new System.EventHandler(this.btVotar_Click);
             // 
             // btResult
             // 
             this.btResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btResult.Location = new System.Drawing.Point(12, 346);
+            this.btResult.Location = new System.Drawing.Point(16, 426);
+            this.btResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btResult.Name = "btResult";
-            this.btResult.Size = new System.Drawing.Size(776, 92);
+            this.btResult.Size = new System.Drawing.Size(1035, 113);
             this.btResult.TabIndex = 2;
-            this.btResult.Text = "&tados";
+            this.btResult.Text = "&Resultados";
             this.btResult.UseVisualStyleBackColor = true;
             this.btResult.Click += new System.EventHandler(this.btResult_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btResult);
             this.Controls.Add(this.btVotar);
             this.Controls.Add(this.btGerenciar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

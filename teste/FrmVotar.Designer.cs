@@ -36,41 +36,45 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 53);
+            this.label1.Size = new System.Drawing.Size(549, 65);
             this.label1.TabIndex = 0;
-            this.label1.Text = "VOtar";
+            this.label1.Text = "Votar";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbxCardeais
             // 
             this.lbxCardeais.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbxCardeais.FormattingEnabled = true;
-            this.lbxCardeais.ItemHeight = 29;
-            this.lbxCardeais.Location = new System.Drawing.Point(12, 65);
+            this.lbxCardeais.ItemHeight = 36;
+            this.lbxCardeais.Location = new System.Drawing.Point(16, 80);
+            this.lbxCardeais.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbxCardeais.Name = "lbxCardeais";
-            this.lbxCardeais.Size = new System.Drawing.Size(412, 323);
+            this.lbxCardeais.Size = new System.Drawing.Size(548, 364);
             this.lbxCardeais.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(154, 405);
+            this.button1.Location = new System.Drawing.Point(205, 498);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 33);
+            this.button1.Size = new System.Drawing.Size(159, 41);
             this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
+            this.button1.Text = "&Votar!";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmVotar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 450);
+            this.ClientSize = new System.Drawing.Size(581, 554);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbxCardeais);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmVotar";
             this.Text = "FrmVotar";
             this.ResumeLayout(false);

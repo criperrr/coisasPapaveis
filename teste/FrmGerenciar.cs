@@ -31,7 +31,6 @@ namespace teste
                 dgvPapavel.Rows.Add(row);
             }
         }
-
         private void brAdd_Click(object sender, EventArgs e)
         {
             if (Funcoes.Lenght(papaveis) == papaveis.Length)
@@ -54,6 +53,30 @@ namespace teste
             papaveis[Funcoes.Lenght(papaveis)] = new string[] { nome, "0" };
             MessageBox.Show("Papavel adicionado com sucesso!");
             txtNome.Text = "";
+            Atualizar();
+        }
+
+        private void btRemove_Click(object sender, EventArgs e)
+        {
+            if (dgvPapavel.SelectedCells.Count == 0)
+            {
+                MessageBox.Show("Selecione um papavel para remover.");
+                return;
+            }
+
+            int rowIndex = dgvPapavel.SelectedCells[0].RowIndex;
+
+            if (rowIndex < 0 || rowIndex >= Funcoes.Lenght(papaveis))
+            {
+                MessageBox.Show("Seleção inválida.");
+                return;
+            }
+            for (int i = rowIndex; i < Funcoes.Lenght(papaveis) - 1; i++)
+            {
+                papaveis[i] = papaveis[i + 1];
+            }
+            papaveis[Funcoes.Lenght(papaveis) - 1] = null;
+
             Atualizar();
         }
     }
